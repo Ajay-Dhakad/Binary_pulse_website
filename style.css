@@ -183,7 +183,7 @@ transition: all .2s;
     width: 100%;
     /* height: 50%; */
         height: fit-content;
-    border: 2px solid;
+    /* border: 2px solid; */
     display: flex;
     align-items: center;
     position: relative;
@@ -211,7 +211,7 @@ transition: all .2s;
 
 
     width: 1300px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     align-items: center;
     gap: 15px;
@@ -232,7 +232,7 @@ transition: all .2s;
     
     display:flex;
     padding: 10px;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
     flex-direction: column;
     font-size: 1.3rem;
     text-align:center;
@@ -285,6 +285,115 @@ transition: all .2s;
        font-size: .8em;
 
     }
+
+
+
+    .courcehead{
+
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        font-family: inter,sans-serif;
+        background-image: linear-gradient(90deg, #fc00ff, #00dbde);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        padding: 0 10px 0 10px;
+        transition: .5s all;
+    }
+/* 
+    .courcehead:hover{
+
+        background-image: linear-gradient(90deg, #00dbde, #fc00ff);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+
+
+    } */
+
+
+
+    .cources{
+
+        display: flex;
+        width: 100%;
+        /* border: 2px solid red; */
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+
+    
+    .lessons{
+
+        display: flex;
+        width:auto;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(34, 31, 31);
+        padding: 10px 0 0 0;
+
+    }
+
+
+    .lesson{
+
+        width: 450px;
+        /* border: 2px solid rebeccapurple; */
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        gap: 10px;
+        transition: .2s;
+        
+
+    }
+
+    .lesson:hover{
+
+        transform:scale(1.02);
+
+    }
+
+   
+
+    .lesson h2{
+
+        font-family: inter,sans-serif;
+        font-size: 1.6rem;
+
+    }
+
+    .lesson p{
+
+font-family: inter,sans-serif;
+
+letter-spacing: normal;
+    }
+
+    .lesson img{
+
+        width: 90%;
+        height: 220px;
+        border-radius: 30px;
+        transition: .2s;
+        filter: brightness(0.9);
+    }
+
+    .lesson img:hover{
+
+        transform: scale(1.01);
+        filter: none;
+    }
+
+
 
 @media (max-width:1000px) {
 
@@ -365,6 +474,10 @@ transition: all .2s;
 
     width: 20px;
     height: 20px;
+}
+
+.lesson{
+    width: 100%;
 }
 
     
