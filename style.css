@@ -1,0 +1,394 @@
+* {
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+
+width: 100%;
+height: 100vh;
+color:white;
+background-color: #333333;
+
+
+
+}
+
+
+header{
+
+    width: 100%;
+    background-color:#333333;
+    height: 10%;
+  
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center ;
+    padding: 15px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    position:sticky;
+    top: 0px;
+    z-index: 100;
+   
+}
+
+header p{
+    
+    font-weight: bold;
+
+}
+
+
+ header p:hover{
+    background-image:linear-gradient(90deg, #fc00ff, #00dbde);
+-webkit-background-clip:text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+font-size: 2rem;
+cursor: pointer;
+ }
+
+header i{
+    display: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: none;
+}
+
+header ul{
+
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-right: 10px;
+}
+
+header li:hover{
+
+background-image:linear-gradient(90deg, #fc00ff, #00dbde);
+-webkit-background-clip:text;
+-webkit-text-fill-color: transparent;
+    
+}
+
+header ul button{
+
+    padding: 5px;
+    height: 50px;
+    width: 120px;
+    border-radius: 50px;
+    background-image:linear-gradient(90deg, #fc00ff, #00dbde);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.intro{
+
+    width: 100%;    
+    height: calc( 100% - 10%);
+    background-color: #333333;
+    /* border: 2px solid  red; */
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+    position: relative;
+}
+
+.introtext{
+
+width: 500px;
+text-align: start;
+display: flex;
+align-items:start;
+flex-direction: column;
+justify-content: center;
+font-size: 1.4rem;
+gap: 15px;
+text-wrap:wrap;
+padding-left:20px;
+
+
+}
+
+.introtext h1{
+
+    font-family:inter,sans-serif;
+    
+
+}
+
+.introtext del{
+
+font-size: 1.4rem;
+color: red;
+
+}
+
+.introtext p{
+
+    font-family:inter,sans-serif;
+    font-size: 1.1rem;
+   font-weight: bold;
+    
+}
+
+.introtext button{
+
+width: 200px;
+height: 50px;
+background-image:linear-gradient(90deg, #fc00ff, #00dbde);
+color: white;
+font: bold; 
+font-size: 1.5rem;
+border-radius: 50px;
+padding: 5px;
+transition: all .2s;
+/* margin-left: 2rem; */
+
+}
+
+.introtext button:active{
+    transform: scale(0.95);
+    
+}
+
+.introimg{
+
+    /* border: 2px solid green; */
+    background-image: url("background.jpeg");
+    background-size: cover;
+    width: 70vw;
+    height: calc( 90vh - 10%);
+    border-radius: 50px;
+    
+
+    
+}
+
+
+.studratings{
+
+    width: 100%;
+    /* height: 50%; */
+        height: fit-content;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    padding: 2px;
+    flex-wrap: wrap;
+    padding-top:2% ;
+    flex-shrink: 1;
+    
+}
+
+.studratings h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.studratings h1:hover{
+
+    background-image: linear-gradient(90deg, #fc00ff, #00dbde);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.students{
+
+
+    width: 1300px;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+
+
+
+
+}
+
+.student{
+
+    width: 400px;
+    height: 200px;
+    
+    display:flex;
+    padding: 10px;
+    border: 2px solid rebeccapurple;
+    flex-direction: column;
+    font-size: 1.3rem;
+    text-align:center;
+    font-family:inter,sans-serif;
+    background-color: rgb(34, 31, 31);
+
+    
+    
+}
+
+.student .studinfo{
+
+    display: flex;
+    font-size: 1.5rem;
+    gap: 10px ;
+    font-family:sans-serif;
+    align-items: flex-start;
+    justify-content: center;
+    
+    text-align: center;
+
+
+}
+
+
+
+.student img{
+
+    width: 20px;
+    margin: 1px;
+    height: 20px;
+
+}
+
+#studpic{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit:cover;
+    
+    
+    
+    }
+
+    .student #says{
+
+       padding: 10px;
+       font-weight: lighter;
+       font-size: .8em;
+
+    }
+
+@media (max-width:1000px) {
+
+    .introimg{
+       width: 100vw;
+        filter: brightness(0.4);
+        
+    }
+
+.introtext{
+
+    position: absolute;
+    z-index: 10;
+    visibility: visible;
+    top: 10%;
+    left: 10px;
+   
+    width: 80%;
+    
+    transform: scale(1);
+    
+}
+
+@media (max-width:700px) {
+
+   header li{
+    display: none;
+   }
+
+    header i{
+        display: block;
+    }
+
+    header ul button{
+
+        display: none;
+    }
+.introimg{
+
+    border-radius: 0;
+    height:100vh ;
+    
+}
+   
+.introtext{
+
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.studratings{
+
+    width: 100%;
+}
+
+.student{
+    width: 95%;
+    padding: 30px;
+    gap: 5px;
+    
+}
+
+.student .studinfo{
+
+    font-size: 1.2rem;
+    padding: 2px;
+    gap: 10px;
+}
+
+#studpic{
+
+    width: 40px;
+    height: 40px;
+}
+
+.student img{
+
+    width: 20px;
+    height: 20px;
+}
+
+    
+}
+
+
+    /* .intro{
+
+        background-image: url("https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Onest:wght@100;900&family=Poiret+One&family=Rubik:wght@300&family=Zen+Loop&display=swap");
+    } */
+
+
+   
+}
+
+@media (max-width:500px) {
+
+    .introimg{
+
+        background-position: center right;
+    }
+
+   
+    
+    
+
+}
