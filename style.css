@@ -421,7 +421,10 @@ transition: all .2s;
 
     .lesson:hover{
 
-        transform:scale(1.02);
+        transform:scale(.99);
+        box-shadow: 5px 5px 20px black;
+        border-radius:20px ; 
+
 
     }
 
