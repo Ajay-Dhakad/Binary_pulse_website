@@ -580,7 +580,35 @@ letter-spacing: normal;
     .moneyback span{
 
         color: green;
+        animation-name: moneyback;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
     }
+
+
+
+
+    /* animation .moneyback */
+
+    @keyframes moneyback {
+
+    50%{
+
+        color: red;
+
+    }
+
+    100%{
+
+        color: green;
+    }
+
+        
+    }
+
+
+
 
 
     .moneyback button:hover:after{
